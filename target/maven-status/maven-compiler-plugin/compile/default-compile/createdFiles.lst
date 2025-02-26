@@ -1,6 +1,0 @@
-drivers/Driver.class
-pages/ContactsPage.class
-utils/ConfigReader.class
-pages/LoginPage.class
-pages/RegistrationPage.class
-pages/BasePage.class
