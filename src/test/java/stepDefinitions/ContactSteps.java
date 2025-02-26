@@ -33,11 +33,8 @@ public class ContactSteps {
     @Then("The Reg. Number should be displayed")
     public void the_message_input_field_should_be_displayed() {
         Assert.assertTrue(contactsPage.isRegNumberDisplayed());
+        Driver.closeDriver();
     }
 
-    @Then("Close the driver")
-    public void close_the_driver(){
-        driver.closeDriver();
-    }
 
 }
