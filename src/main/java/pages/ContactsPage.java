@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+import static drivers.Driver.closeDriver;
+
 public class ContactsPage {
     private WebDriver driver;
     private WebDriverWait wait;
@@ -46,5 +48,9 @@ public class ContactsPage {
     public boolean isSubmitButtonDisplayed() {
         WebElement submitElement = wait.until(ExpectedConditions.visibilityOfElementLocated(submitButton));
         return submitElement.isDisplayed();
+    }
+
+    public void close_driver(){
+        closeDriver();
     }
 }
