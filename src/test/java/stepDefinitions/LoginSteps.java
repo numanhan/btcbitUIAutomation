@@ -30,5 +30,6 @@ public class LoginSteps {
     @Then("User verifies page text")
     public void verify_successful_login(){
         loginPage.successfullLogin();
+        Driver.closeDriver();
     }
 }

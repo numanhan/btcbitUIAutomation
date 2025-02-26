@@ -7,6 +7,7 @@ import org.junit.Assert;
 
 public class ContactSteps {
     private ContactsPage contactsPage;
+    private Driver driver;
 
     @Given("The user is on the Contact page")
     public void the_user_is_on_the_contact_page() {
@@ -19,23 +20,24 @@ public class ContactSteps {
         Assert.assertTrue(contactsPage.isPageTitleDisplayed());
     }
 
-    @Then("The name input field should be displayed")
+    @Then("The country field should be displayed")
     public void the_name_input_field_should_be_displayed() {
-        Assert.assertTrue(contactsPage.isNameInputDisplayed());
+        Assert.assertTrue(contactsPage.isCountryTitleDisplayed());
     }
 
-    @Then("The email input field should be displayed")
+    @Then("The address field should be displayed")
     public void the_email_input_field_should_be_displayed() {
-        Assert.assertTrue(contactsPage.isEmailInputDisplayed());
+        Assert.assertTrue(contactsPage.isAddressTitleDisplayed());
     }
 
-    @Then("The message input field should be displayed")
+    @Then("The Reg. Number should be displayed")
     public void the_message_input_field_should_be_displayed() {
-        Assert.assertTrue(contactsPage.isMessageInputDisplayed());
+        Assert.assertTrue(contactsPage.isRegNumberDisplayed());
     }
 
-    @Then("The submit button should be displayed")
-    public void the_submit_button_should_be_displayed() {
-        Assert.assertTrue(contactsPage.isSubmitButtonDisplayed());
+    @Then("Close the driver")
+    public void close_the_driver(){
+        driver.closeDriver();
     }
+
 }

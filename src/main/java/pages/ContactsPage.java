@@ -7,14 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
-
-import static drivers.Driver.closeDriver;
-
-public class ContactsPage {
+public class ContactsPage extends BasePage{
     private WebDriver driver;
     private WebDriverWait wait;
     private JavascriptExecutor jsExecutor;
+
 
     private By pageTitle = By.xpath("//h1[contains(text(), 'Contacts')]");
     private By countryTitle = By.xpath("//h2[contains(text(), 'Poland')]");
@@ -22,11 +19,11 @@ public class ContactsPage {
     private By regNumber = By.xpath("//h4[contains(text(),'Reg. Nr.']");
 
 
+
     public ContactsPage(WebDriver driver) {
-        this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        this.jsExecutor = (JavascriptExecutor) driver;
+        super();
     }
+
 
     private void scrollPage(int pixels) {
         jsExecutor.executeScript("window.scrollBy(0, " + pixels + ");");
@@ -53,8 +50,4 @@ public class ContactsPage {
         return regNum.isDisplayed();
     }
 
-
-    public void close_driver() {
-        closeDriver();
-    }
 }

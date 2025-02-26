@@ -16,7 +16,7 @@ public class RegistrationPage extends BasePage {
 
 
     public RegistrationPage(WebDriver driver) {
-        super(driver);
+        super();
     }
 
     public void clickGetStarted() {

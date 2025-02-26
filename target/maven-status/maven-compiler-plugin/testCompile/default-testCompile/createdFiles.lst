@@ -1,0 +1,4 @@
+stepDefinitions/RegistrationSteps.class
+stepDefinitions/LoginSteps.class
+runners/TestRunner.class
+stepDefinitions/ContactSteps.class

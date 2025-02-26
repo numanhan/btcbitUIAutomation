@@ -1,7 +1,6 @@
 package pages;
 
 import dev.failsafe.internal.util.Assert;
-import drivers.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,7 +18,7 @@ public class LoginPage extends BasePage{
 
 
     public LoginPage(WebDriver driver) {
-        super(driver);
+        super();
     }
 
     public void clickLogin() {
@@ -46,7 +45,6 @@ public class LoginPage extends BasePage{
         wait.until(ExpectedConditions.jsReturnsValue("return document.readyState === 'complete';"));
         String expectedText = wait.until(ExpectedConditions.visibilityOfElementLocated(verifyMessage)).getText();
         Assert.isTrue(Boolean.parseBoolean(pageText),expectedText);
-        Driver.closeDriver();
     }
 
 }
