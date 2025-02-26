@@ -48,6 +48,8 @@ After the tests are completed, the reports will be generated in the target/cucum
 The project is structured as follows:
 ```
 btcbitUIAutomation/
+├── .github/workflows
+│   ci.yml                       # Github Actions connection file for CI connection
 ├── src/
 │   ├── main/
 │   │   └── java/                # Main application code (if any)
