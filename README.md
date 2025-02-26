@@ -46,7 +46,7 @@ After the tests are completed, the reports will be generated in the target/cucum
 
 ## Project Structure
 The project is structured as follows:
-
+```
 btcbitUIAutomation/
 ├── src/
 │   ├── main/
@@ -62,7 +62,7 @@ btcbitUIAutomation/
 ├── target/                      # Compiled classes and test reports
 ├── pom.xml                      # Maven configuration file
 └── README.md                    # Project documentation
-
+```
 ### Key Files and Directories
 
 - src/test/java/runners/: Contains the test runner classes (e.g., TestRunner.java).
