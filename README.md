@@ -70,15 +70,6 @@ btcbitUIAutomation/
 - src/test/resources/features/: Contains the .feature files that define the test scenarios.
 - pom.xml: Contains Maven dependencies and project configuration.
 
-## Contributing
-If you would like to contribute to this project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bugfix.
-3. Commit your changes.
-4. Push your branch and submit a pull request.
-5. We welcome all contributions!
-
 
 ---
 
@@ -135,3 +126,12 @@ jobs:
 
       - name: Build and test with Maven
         run: mvn clean test
+
+## Contributing
+If you would like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Commit your changes.
+4. Push your branch and submit a pull request.
+5. We welcome all contributions!
